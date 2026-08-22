@@ -1,17 +1,19 @@
 #include<iostream>
 using namespace std;
 
-union money {
-    int rice;
-    char car;
-    float pounds;
-};
 
 int main() {
-     union money m1;
-     m1.rice = 14;
-     m1.car = 'c';
+     enum Meal {breakfast,lunch,dinner};
      
-     cout <<m1.rice <<endl;
+     cout <<breakfast <<endl;
+     cout <<lunch <<endl;
+     cout <<dinner <<endl;
+
+
+    //  Meal m1 = breakfast;
+    //  cout <<m1 <<endl;
+
+     Meal m1 = lunch;
+     cout <<(m1==2);
     return 0;
 }
